@@ -1,6 +1,6 @@
 # Frontend Mentor - Manage landing page solution
 
-This is a solution to the [Manage landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Manage landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5).
 
 ## Table of contents
 
@@ -13,8 +13,6 @@ This is a solution to the [Manage landing page challenge on Frontend Mentor](htt
   - [What I learned](#what-i-learned)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
