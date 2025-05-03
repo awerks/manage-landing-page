@@ -14,6 +14,8 @@
     --color-neutral-500: oklch(0.556 0 0);
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
     --text-5xl: 3rem;
@@ -280,6 +282,9 @@
   .flex-wrap {
     flex-wrap: wrap;
   }
+  .items-baseline {
+    align-items: baseline;
+  }
   .items-center {
     align-items: center;
   }
@@ -387,6 +392,10 @@
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
   }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
   .leading-\[1\.15\] {
     --tw-leading: 1.15;
     line-height: 1.15;
@@ -421,6 +430,9 @@
   }
   .text-very-light-gray {
     color: var(--color-very-light-gray);
+  }
+  .italic {
+    font-style: italic;
   }
   .outline {
     outline-style: var(--tw-outline-style);

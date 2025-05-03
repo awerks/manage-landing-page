@@ -251,15 +251,16 @@
                     </ul>
                 </div>
                 <div class="md:col-span-3 md:justify-self-center lg:col-auto lg:justify-self-end">
-                    <form action="">
-                        <div class="flex gap-2 flex-wrap items-center">
+                    <form action="" id="newsletter-form">
+                        <div class="flex gap-2 flex-wrap items-baseline">
                             <input
-                                type="email"
+                                type="text"
+                                id="email"
                                 class="peer rounded-full max-w-60 text-very-dark-blue bg-very-light-gray inline px-6 py-3 invalid:outline-red-400 invalid:outline-2 mb-2"
                                 placeholder="Updates in your inbox..." />
                             <button type="submit" class="btn">Go</button>
                         </div>
-                        <p id="error-message" class="hidden text-red-400">Please insert a valid email</p>
+                        <p id="error-message" class="hidden text-sm italic text-red-400">Please insert a valid email</p>
                         <p class="mt-10 md:text-center lg:text-end">Copyright 2020. All rights reserved</p>
                     </form>
                 </div>
