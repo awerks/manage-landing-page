@@ -5,12 +5,12 @@ This is a solution to the [Manage landing page challenge on Frontend Mentor](htt
 ## Table of contents
 
 - [Overview](#overview)
-    - [The challenge](#the-challenge)
-    - [Screenshot](#screenshot)
-    - [Links](#links)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
 - [My process](#my-process)
-    - [Built with](#built-with)
-    - [What I learned](#what-i-learned)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -27,8 +27,8 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - See all testimonials in a horizontal slider
 - Receive an error message when the newsletter sign up `form` is submitted if:
-    - The `input` field is empty
-    - The email address is not formatted correctly
+  - The `input` field is empty
+  - The email address is not formatted correctly
 
 ### Screenshot
 
@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [deployed on Netflify](https://your-live-site-url.com)
+- Live Site URL: [deployed on Netflify](https://managelandingpage-mentor.netlify.app/)
 
 ## My process
 
@@ -63,12 +63,12 @@ First, I grouped the number `<span>` and the `<h3>` heading within a wrapper `<d
 
 ```html
 <!-- Inside each <li> -->
-<div class="flex items-center ... md:contents">
-    {/* Wrapper Div */}
-    <span class="number ...">01</span>
-    <h3 class="text-base ...">Track company-wide progress</h3>
+<div class="flex items-center md:contents ...">
+  {/* Wrapper Div */}
+  <span class="number ...">01</span>
+  <h3 class="text-base ...">Track company-wide progress</h3>
 </div>
-<p class="mt-2 ... md:col-start-2">...</p>
+<p class="mt-2 md:col-start-2 ...">...</p>
 ```
 
 On mobile, the wrapper `div` uses `flex` to position the number and heading and has a background (`bg-very-pale-red`).
