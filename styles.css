@@ -20,6 +20,12 @@
 
 @layer base {
     body {
+        scroll-behavior: smooth;
+
+        @variant motion-reduce {
+            scroll-behavior: auto;
+        }
+
         /* background-image: url("images/bg-tablet-pattern.svg");
         background-repeat: no-repeat;
         /* background-size: 20%; */
@@ -36,6 +42,10 @@
     h5,
     h6 {
         @apply font-bold text-dark-blue;
+
+        @variant dark {
+            @apply text-very-light-gray;
+        }
     }
 
     h1 {
@@ -58,18 +68,35 @@
         @apply bg-bright-red text-very-light-gray py-3 px-8 rounded-full font-semibold shadow-md hover:bg-bright-red/80 hover:-translate-y-[4px] transition-[background-color_translate] duration-300 ease-in-out cursor-pointer;
     }
 
-    .numbered-list li:not(:last-child) {
+    /* .numbered-list li:not(:last-child) {
         @apply mb-8;
     }
 
     .numbered-list {
         counter-reset: list;
-        position: relative;
     }
 
-    .numbered-list li::before {
+    .numbered-list li {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 1rem;
+        align-items: start;
+
+    }
+
+    .numbered-list .number {
+        display: block;
+        background-color: var(--color-bright-red);
+        color: var(--color-very-light-gray);
+        padding: 0.5rem 1.5rem;
+        font-weight: bold;
+        border-radius: 100vw;
+    } */
+
+    /* .numbered-list li::before {
         position: absolute;
         left: -5rem;
+        margin-right: 5rem;
         counter-increment: list;
         content: counter(list);
         background-color: var(--color-bright-red);
@@ -77,10 +104,22 @@
         padding: 0.5rem 1.5rem;
         font-weight: bold;
         border-radius: 100vw
-    }
+    } */
 
     .testimonials div {
-        @apply rounded-md bg-neutral-400/15 p-8 shadow-md flex flex-col gap-4 text-center;
+        @apply relative rounded-md bg-neutral-400/10 p-8 flex flex-col gap-4 text-center snap-start;
+    }
 
+    .testimonials div::before {
+        content: '';
+        position: absolute;
+        top: -3rem;
+        left: 50%;
+        background-size: cover;
+        background-position: center;
+        width: 4.5rem;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        transform: translateX(-50%);
     }
 }
